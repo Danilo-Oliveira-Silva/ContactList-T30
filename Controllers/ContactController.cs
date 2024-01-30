@@ -35,7 +35,7 @@ public class ContactController : ControllerBase
     public IActionResult DeleteContact(int ContactId)
     {
         _repository.DeleteContact(ContactId);
-        return Ok();
+        return NoContent();
     }
 
 }
